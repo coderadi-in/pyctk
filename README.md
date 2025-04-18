@@ -45,7 +45,7 @@ This series is perfect for:
 
 1. **Clone this repository**
     ```shell
-    git clone https://github.com/yourusername/pyctk
+    git clone https://github.com/py-developer-adi/pyctk
     ```
 
 2. **Install dependencies**
