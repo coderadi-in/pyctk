@@ -65,4 +65,10 @@ This series is perfect for:
 - Installation
 - Creating Main Window
 
+> 2. **Basic Widgets**
+
+- CTkLabel
+- CTkEntry
+- CTkButton
+
 > **More Chapters are on the way...**
