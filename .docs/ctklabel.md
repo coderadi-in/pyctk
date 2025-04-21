@@ -1,7 +1,7 @@
 # CTkLabel Documentation
 
 ## Overview
-`CTkLabel` is a widget of `customtkinter` that is used to diplay text or image is `CTk` window.
+`CTkLabel` is a widget of `customtkinter` that is used to diplay text or image in `CTk` window.
 
 This documentation provides an in-depth explanation of all constructor arguments, attributes, and methods associated with `customtkinter.CTkLabel`.
 
