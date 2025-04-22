@@ -18,5 +18,18 @@ label = CTkLabel(
 )
 label.pack()
 
+# | Entry
+entry = CTkEntry(
+    root, 
+    width=200,
+    height=40,
+    corner_radius=5,
+    fg_color="#282828",
+    placeholder_text="Enter your name",
+    text_color="#EDEDED",
+    placeholder_text_color="#505050"
+)
+entry.pack()
+
 # ! Run the UI
 root.mainloop()
