@@ -31,5 +31,14 @@ entry = CTkEntry(
 )
 entry.pack()
 
+# | Insert Method
+entry.insert(0, "Hello")
+
+# | Get Method
+print(entry.get())
+
+# | Delete Method
+entry.delete(0, END)
+
 # ! Run the UI
 root.mainloop()
