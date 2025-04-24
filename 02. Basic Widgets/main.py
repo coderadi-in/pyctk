@@ -8,17 +8,18 @@ root = CTk()
 root.title("Basic Widgets")
 root.geometry("600x400")
 
-# | Label
+# * Label
 label = CTkLabel(
     root, text="Hello world", text_color="#0000ff",
     fg_color="#00ff00",
     bg_color="#000000",
     corner_radius=10,
-    font=("Arial", 20, "bold")
+    font=("Arial", 20, "bold"),
+    cursor="cross"
 )
 label.pack()
 
-# | Entry
+# * Entry
 entry = CTkEntry(
     root, 
     width=200,
@@ -40,5 +41,17 @@ print(entry.get())
 # | Delete Method
 entry.delete(0, END)
 
+# & A function
+def func():
+    print("button clicked!!")
+
+# * Button
+button = CTkButton(
+    root, text="Click Me",
+    command=func,
+    fg_color="#181818", text_color="#EDEDED", hover=True, hover_color="#505050", cursor="hand2"
+)
+button.pack()
+
 # ! Run the UI
-root.mainloop()
+root.mainloop() 
