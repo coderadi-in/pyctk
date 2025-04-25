@@ -53,5 +53,17 @@ button = CTkButton(
 )
 button.pack()
 
+# | function to bind
+def change_(event):
+    button.configure(text="click")
+
+# & function to reset text
+def reset_(event):
+    button.configure(text="Click Me")
+
+# & Bind Method
+button.bind("<Enter>", change_)
+button.bind("<Leave>", reset_)
+
 # ! Run the UI
 root.mainloop() 
