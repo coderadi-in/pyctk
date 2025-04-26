@@ -71,4 +71,6 @@ This series is perfect for:
 - CTkEntry
 - CTkButton
 
-> **More Chapters are on the way...**
+> 3. **Project - 01**
+
+- Language Translator
