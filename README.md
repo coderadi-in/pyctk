@@ -74,3 +74,11 @@ This series is perfect for:
 > 3. **Project - 01**
 
 - Language Translator
+
+> 4. **Geometry Managers**
+
+- The Pack Manager
+- The Grid Manager
+- The Place Manager
+
+> **More Chapters on the way...**
