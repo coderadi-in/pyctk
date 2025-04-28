@@ -6,6 +6,19 @@ Geometry Managers in Python CTk control how the widgets are positioned and sized
 2. `grid`: Arranges widgets in rows and columns. Ideal for structured table-like designs.
 3. `place`: Places widgets at exact coordinates. Ideal for pixel-perfect positioning or overlays.
 
+## Outline
+- [Pack](#01-the-pack-manager)
+    - [Common Use-Cases](#common-use-cases)
+    - [Arguments](#arguments)
+
+- [Grid](#02-the-grid-manager)
+    - [Common Use-Cases](#common-use-cases-1)
+    - [Arguments](#arguments-1)
+    
+- [Place](#03-the-place-manager)
+    - [Common Use-Cases](#common-use-cases-2)
+    - [Arguments](#arguments-2)
+
 ## Key Rules
 
 - Never mix managers in the same parent container.
@@ -54,3 +67,23 @@ columnspan | Number of columns the widget spans horizontally. | Integers (e.g `3
 sticky | Stretches widget to fill its cell | Directions (e.g `"n"`, `"sw"`, `"e"`) | `"center"`
 padx/pady | External padding (space outside widget) | Pixels (e.g, `5`, `10`) | `0`
 ipadx/ipady | Internal padding (space inside widget) | Pixels (e.g, `10`, `(5, 10)`) | `0`
+
+## 03. The Place Manager
+
+The place geometry manager allows absolute or relative positioning of the widgets withig their parent containers. It gives pixel-level control over widget placement. It's not commonly used for UIs due to its lack of automatic resizing logic.
+
+### Common Use-Cases
+
+- **Custom Overlays**: Tooltips, floating buttons, or notification banners.
+- **Draggable Widgets**: Elements moved by user interaction.
+- **Custom-Drawn UIs**: Interfaces requiring non-linear widget placement.
+
+### Arguments
+
+Argument | Description | Values/Examples | Default
+-|-|-|-
+x/y | Exact X/Y coordinates relative to parent's top-left corner | Integers (e.g `0`, `100`) | `0`
+relx/rely | Relative X/Y position (0.0 - left/top - 1.0 - right/bottom) | Floats (e.g `0.5`, `0.8`) | `0.0`
+anchor | Anchor point for positioning widgets. | Directions (e.g `"n"`, `"se"`, `"e"`) | `"nw"`
+width/height | Absolute size of widget in pixels. | Integers (e.g `100`, `200`) | Widget's natural size
+relwidth/relheight | Size of widget relative to parent (0.0 - 1.0) | Float (e.g `0.5` - half of parent) | `1.0`
