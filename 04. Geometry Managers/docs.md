@@ -70,7 +70,7 @@ ipadx/ipady | Internal padding (space inside widget) | Pixels (e.g, `10`, `(5, 1
 
 ## 03. The Place Manager
 
-The place geometry manager allows absolute or relative positioning of the widgets withig their parent containers. It gives pixel-level control over widget placement. It's not commonly used for UIs due to its lack of automatic resizing logic.
+The place geometry manager allows absolute or relative positioning of the widgets within their parent containers. It gives pixel-level control over widget placement. It's not commonly used for UIs due to its lack of automatic resizing logic.
 
 ### Common Use-Cases
 
@@ -85,5 +85,4 @@ Argument | Description | Values/Examples | Default
 x/y | Exact X/Y coordinates relative to parent's top-left corner | Integers (e.g `0`, `100`) | `0`
 relx/rely | Relative X/Y position (0.0 - left/top - 1.0 - right/bottom) | Floats (e.g `0.5`, `0.8`) | `0.0`
 anchor | Anchor point for positioning widgets. | Directions (e.g `"n"`, `"se"`, `"e"`) | `"nw"`
-width/height | Absolute size of widget in pixels. | Integers (e.g `100`, `200`) | Widget's natural size
 relwidth/relheight | Size of widget relative to parent (0.0 - 1.0) | Float (e.g `0.5` - half of parent) | `1.0`
