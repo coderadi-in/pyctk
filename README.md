@@ -81,4 +81,10 @@ This series is perfect for:
 - The Grid Manager
 - The Place Manager
 
+> 5. **Theming**
+
+- Theme Building
+- Using Custom themes in UI
+- CTkFont
+
 > **More Chapters on the way...**
