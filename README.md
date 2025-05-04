@@ -87,4 +87,9 @@ This series is perfect for:
 - Using Custom themes in UI
 - CTkFont
 
+> 6. **Utilities**
+
+- CTkImage
+- CTkFont
+
 > **More Chapters on the way...**
