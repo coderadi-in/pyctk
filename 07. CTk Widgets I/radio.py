@@ -32,7 +32,9 @@ r3.pack()
 
 r4 = CTkRadioButton(
     root, text='Go',
-    variable=var, value=3
+    variable=var, value=3,
+    width=250, height=50,
+    radiobutton_height=25, radiobutton_width=25
 )
 r4.pack()
 
