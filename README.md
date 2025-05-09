@@ -92,4 +92,10 @@ This series is perfect for:
 - CTkImage
 - CTkFont
 
+> 7. **CTk Widget I**
+
+- CheckBox
+- RadioButton
+- ComboBox
+
 > **More Chapters on the way...**
