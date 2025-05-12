@@ -98,4 +98,8 @@ This series is perfect for:
 - RadioButton
 - ComboBox
 
+> 8. **CTk Widgets II**
+
+- SegmentedButton
+
 > **More Chapters on the way...**
