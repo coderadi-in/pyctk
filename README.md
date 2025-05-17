@@ -101,5 +101,6 @@ This series is perfect for:
 > 8. **CTk Widgets II**
 
 - SegmentedButton
+- OptionMenu
 
 > **More Chapters on the way...**
