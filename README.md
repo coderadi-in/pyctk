@@ -102,5 +102,6 @@ This series is perfect for:
 
 - SegmentedButton
 - OptionMenu
+- Frame
 
 > **More Chapters on the way...**
