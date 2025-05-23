@@ -19,6 +19,13 @@ green = "#00ff00"
 hover = "#eaebc5"
 text_color = "#1a1a1d"
 
+# * Functions
+def click(event):
+    widget = event.widget
+    button = widget.master
+    text = button.cget("text")
+    display.insert(END, text)
+
 # | Display
 display = CTkEntry(
     root, width=380, height=70,
@@ -43,6 +50,7 @@ b1 = CTkButton(
 b1.grid(
     row=0, column=0, padx=5, pady=5
 )
+b1.bind("<Button-1>", click)
 
 b2 = CTkButton(
     nums, text="2", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -50,6 +58,7 @@ b2 = CTkButton(
 b2.grid(
     row=0, column=1, padx=5, pady=5
 )
+b2.bind("<Button-1>", click)
 
 b3 = CTkButton(
     nums, text="3", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -57,6 +66,7 @@ b3 = CTkButton(
 b3.grid(
     row=0, column=2, padx=5, pady=5
 )
+b3.bind("<Button-1>", click)
 
 b4 = CTkButton(
     nums, text="4", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -64,6 +74,7 @@ b4 = CTkButton(
 b4.grid(
     row=1, column=0, padx=5, pady=5
 )
+b4.bind("<Button-1>", click)
 
 b5 = CTkButton(
     nums, text="5", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -71,6 +82,7 @@ b5 = CTkButton(
 b5.grid(
     row=1, column=1, padx=5, pady=5
 )
+b5.bind("<Button-1>", click)
 
 b6 = CTkButton(
     nums, text="6", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -78,6 +90,7 @@ b6 = CTkButton(
 b6.grid(
     row=1, column=2, padx=5, pady=5
 )
+b6.bind("<Button-1>", click)
 
 b7 = CTkButton(
     nums, text="7", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -85,6 +98,7 @@ b7 = CTkButton(
 b7.grid(
     row=2, column=0, padx=5, pady=5
 )
+b7.bind("<Button-1>", click)
 
 b8 = CTkButton(
     nums, text="8", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -92,6 +106,7 @@ b8 = CTkButton(
 b8.grid(
     row=2, column=1, padx=5, pady=5
 )
+b8.bind("<Button-1>", click)
 
 b9 = CTkButton(
     nums, text="9", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -99,6 +114,7 @@ b9 = CTkButton(
 b9.grid(
     row=2, column=2, padx=5, pady=5
 )
+b9.bind("<Button-1>", click)
 
 b0 = CTkButton(
     nums, text="0", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -106,6 +122,7 @@ b0 = CTkButton(
 b0.grid(
     row=3, column=1, padx=5, pady=5
 )
+b0.bind("<Button-1>", click)
 
 b_dot = CTkButton(
     nums, text=".", width=85, height=85, font=sf, fg_color=blue, hover_color=hover, text_color=text_color
@@ -113,6 +130,7 @@ b_dot = CTkButton(
 b_dot.grid(
     row=3, column=0, padx=5, pady=5
 )
+b_dot.bind("<Button-1>", click)
 
 # * Operator Buttons
 b_plus = CTkButton(
@@ -121,6 +139,7 @@ b_plus = CTkButton(
 b_plus.grid(
     row=0, column=3, padx=5, pady=5
 )
+b_plus.bind("<Button-1>", click)
 
 b_minus = CTkButton(
     nums, text="-", width=85, height=85, font=sf, fg_color=green, hover_color=hover, text_color=text_color
@@ -128,6 +147,7 @@ b_minus = CTkButton(
 b_minus.grid(
     row=1, column=3, padx=5, pady=5
 )
+b_minus.bind("<Button-1>", click)
 
 b_multiply = CTkButton(
     nums, text="*", width=85, height=85, font=sf, fg_color=green, hover_color=hover, text_color=text_color
@@ -135,6 +155,7 @@ b_multiply = CTkButton(
 b_multiply.grid(
     row=2, column=3, padx=5, pady=5
 )
+b_multiply.bind("<Button-1>", click)
 
 b_divide = CTkButton(
     nums, text="/", width=85, height=85, font=sf, fg_color=green, hover_color=hover, text_color=text_color
@@ -142,6 +163,7 @@ b_divide = CTkButton(
 b_divide.grid(
     row=3, column=3, padx=5, pady=5
 )
+b_divide.bind("<Button-1>", click)
 
 b_eq = CTkButton(
     nums, text="=", width=85, height=85, font=sf, fg_color=green, hover_color=hover, text_color=text_color
