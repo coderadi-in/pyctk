@@ -26,6 +26,20 @@ def click(event):
     text = button.cget("text")
     display.insert(END, text)
 
+def clear(event):
+    display.delete(0, END)
+
+def calculate(event):
+    query = display.get()
+    try:
+        res = eval(query)
+    except Exception as e:
+        res = "Error"
+        print(e)
+
+    clear(None)
+    display.insert(0, res)
+
 # | Display
 display = CTkEntry(
     root, width=380, height=70,
@@ -171,6 +185,7 @@ b_eq = CTkButton(
 b_eq.grid(
     row=3, column=2, padx=5, pady=5
 )
+b_eq.bind("<Button-1>", calculate)
 
 # * Function Buttons
 b_clear = CTkButton(
@@ -179,6 +194,7 @@ b_clear = CTkButton(
 b_clear.grid(
     row=4, column=0, padx=5, pady=5, columnspan=2
 )
+b_clear.bind("<Button-1>", clear)
 
 b_back = CTkButton(
     nums, text="X", width=180, height=85, font=sf, fg_color=red, hover_color=hover, text_color=text_color
