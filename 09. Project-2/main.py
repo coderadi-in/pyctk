@@ -40,6 +40,13 @@ def calculate(event):
     clear(None)
     display.insert(0, res)
 
+def backspace(event):
+    text = display.get()
+    if len(text) > 0:
+        newtext = text[:-1]
+        clear(None)
+        display.insert(0, newtext)
+
 # | Display
 display = CTkEntry(
     root, width=380, height=70,
@@ -202,6 +209,7 @@ b_back = CTkButton(
 b_back.grid(
     row=4, column=2, padx=5, pady=5, columnspan=2
 )
+b_back.bind("<Button-1>", backspace)
 
 # ! Run the UI
 root.mainloop()
