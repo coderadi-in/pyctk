@@ -104,4 +104,8 @@ This series is perfect for:
 - OptionMenu
 - Frame
 
+> 9. **Project - 02**
+
+- Calcualtor
+
 > **More Chapters on the way...**
