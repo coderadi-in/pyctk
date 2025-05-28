@@ -108,4 +108,12 @@ This series is perfect for:
 
 - Calcualtor
 
+> 10. **Packaging**
+
+- Converting ".py " FILES to ".exe" APPS
+
+> 11. **Textbox**
+
+- Textbox Widget
+
 > **More Chapters on the way...**
